@@ -29,11 +29,18 @@ Test Case 06: Fill in the registration fields - Dados da conta
   Check if the page has Dados da conta
   Fill in user account details
   Click on register button
+
+Teste Case 07: Check success message 
   Check registration confirmation message
   Close site
 
-Test Case 07: Go to login page
+Test Case 08: Go to login page
   Access Home page
   Check page title Bemol | Escolha com Confiança
   Acess page Login
   Check login page title Login - Bemol
+
+Test Case 09: Login
+  Fill email and password
+  Click on the button Entrar
+  Close site
