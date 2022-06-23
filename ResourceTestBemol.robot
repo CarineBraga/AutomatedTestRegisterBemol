@@ -4,6 +4,8 @@ Library  SeleniumLibrary
 
 *** Variables ***
 
+# User registration data were taken from the website: https://www.4devs.com.br/gerador_de_pessoas
+
 ${URL}                       https://www.bemol.com.br/
 ${BROWSER}                   chrome
 ${BUTTON_LOGIN}              xpath://*[@id="profile-orders-2"]/div[1]/a
@@ -15,7 +17,7 @@ ${FIELD_BIRTH_DATE}          xpath://*[@id="AddOrSetCustomer-BirthDate"]
 ${TEXT_BIRTH_DATE}           14061974
 ${SELECT_GENRE}              id:AddOrSetCustomer-Gender 
 ${FIELD_CPF}                 xpath://*[@id="AddOrSetCustomer-Cpf"]
-${TEXT_CPF}                  93943780228
+${TEXT_CPF}                  46217182238  #User CPF for example: 21100753257, 09809798202, 21462571212
 ${TITLE3_DELIVERY_DATA}      xpath://*[@id="content-wrapper"]/div[1]/div/div/div/div/div[2]/form/div[2]/div
 ${FIELD_IDENTIFICATION}      xpath://*[@id="AddOrSetAddress-0-Name"]
 ${TEXT_IDENTIFICATION}       beco
@@ -31,7 +33,7 @@ ${FIELD_REFERENCE}           id:AddOrSetAddress-0-Landmark
 ${TEXT_REFERENCE}            Mercado Vidal
 ${TITLE4_CONTACT_DETAILS}    xpath://*[@id="content-wrapper"]/div[1]/div/div/div/div/div[2]/form/div[3]/div
 ${FIELD_EMAIL}               id:AddOrSetCustomer-Email
-${TEXT_EMAIL}                fernandomoura9451@gmail.com
+${TEXT_EMAIL}                fernando.moura9451@gmail.com  #User Email for example: fer.nandomoura9451@gmail.com, fernandomoura.9451@gmail.com, fernando.moura.9451@gmail.com
 ${FIELD_CELL}                id:AddOrSetCustomer-Contact-CellPhone
 ${TEXT_CELL}                 92993949212
 ${TILE5_CONTACT_DETAILS}     xpath://*[@id="content-wrapper"]/div[1]/div/div/div/div/div[2]/form/div[4]/div
