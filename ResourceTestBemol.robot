@@ -28,7 +28,11 @@ ${FIELD_COMPLEMENT}          id:AddOrSetAddress-0-AddressNotes
 ${TEXT_COMPLEMENT}           Proximo a  rua Flores
 ${FIELD_REFERENCE}           id:AddOrSetAddress-0-Landmark
 ${TEXT_REFERENCE}            Mercado Vidal
-
+${TITLE4_CONTACT_DETAILS}    xpath://*[@id="content-wrapper"]/div[1]/div/div/div/div/div[2]/form/div[3]/div
+${FIELD_EMAIL}               id:AddOrSetCustomer-Email
+${TEXT_EMAIL}                valentina_sophia_gomes@soupelli.com.br
+${FIELD_CELL}                id:AddOrSetCustomer-Contact-CellPhone
+${TEXT_CELL}                 92993949212
 
 *** Keywords ***
 
@@ -70,3 +74,9 @@ Fill in user delivery data
   Input Text   ${FIELD_NUMBER}    ${TEXT_NUMBER}
   Input Text   ${FIELD_COMPLEMENT}   ${TEXT_COMPLEMENT}
   Input Text    ${FIELD_REFERENCE}    ${TEXT_REFERENCE}
+
+Check if the page has Dados de contato
+  Page Should Contain Element    ${TITLE4_CONTACT_DETAILS}
+
+Fill in the user's contact details
+  Input Text    ${FIELD_CELL}    ${TEXT_CELL}

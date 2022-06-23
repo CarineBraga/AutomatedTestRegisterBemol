@@ -20,3 +20,7 @@ Test Case 03: Fill in the registration fields - Dados Pessoais
 Test Case 04: Fill in the registration fields - Dados de entrega
   Check if the page has Dados de entrega
   Fill in user delivery data
+
+Test Case 05: Fill in the registration fields - Dados de contato
+  Check if the page has Dados de contato
+  Fill in the user's contact details
