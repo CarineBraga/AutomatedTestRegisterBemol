@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.10.5 on win32)" generated="20220623 01:43:05.995" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1.3 (Python 3.10.5 on win32)" generated="20220623 01:47:01.557" rpa="false" schemaversion="2">
 <suite id="s1" name="TestBemol" source="C:\Robot_Framework\TestBemol_QA\TestBemol.robot">
 <test id="s1-t1" name="Test Case 01: Access Site bemol">
 <kw name="Access Home page" library="ResourceTestBemol">
@@ -7,274 +7,321 @@
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220623 01:43:06.388" level="INFO">Opening browser 'chrome' to base url 'https://www.bemol.com.br/'.</msg>
-<status status="PASS" starttime="20220623 01:43:06.388" endtime="20220623 01:43:16.012"/>
+<msg timestamp="20220623 01:47:01.928" level="INFO">Opening browser 'chrome' to base url 'https://www.bemol.com.br/'.</msg>
+<status status="PASS" starttime="20220623 01:47:01.928" endtime="20220623 01:47:11.414"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220623 01:43:16.012" endtime="20220623 01:43:17.053"/>
+<status status="PASS" starttime="20220623 01:47:11.414" endtime="20220623 01:47:12.134"/>
 </kw>
-<status status="PASS" starttime="20220623 01:43:06.387" endtime="20220623 01:43:17.054"/>
+<status status="PASS" starttime="20220623 01:47:01.927" endtime="20220623 01:47:12.135"/>
 </kw>
 <kw name="Check page title Bemol | Escolha com Confiança" library="ResourceTestBemol" sourcename="Check page title ${TITULO}">
 <kw name="Title Should Be" library="SeleniumLibrary">
 <arg>${TITULO}</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20220623 01:43:17.128" level="INFO">Page title is 'Bemol | Escolha com Confiança'.</msg>
-<status status="PASS" starttime="20220623 01:43:17.056" endtime="20220623 01:43:17.128"/>
+<msg timestamp="20220623 01:47:12.405" level="INFO">Page title is 'Bemol | Escolha com Confiança'.</msg>
+<status status="PASS" starttime="20220623 01:47:12.137" endtime="20220623 01:47:12.405"/>
 </kw>
-<status status="PASS" starttime="20220623 01:43:17.055" endtime="20220623 01:43:17.128"/>
+<status status="PASS" starttime="20220623 01:47:12.136" endtime="20220623 01:47:12.406"/>
 </kw>
-<status status="PASS" starttime="20220623 01:43:06.385" endtime="20220623 01:43:17.129"/>
+<status status="PASS" starttime="20220623 01:47:01.926" endtime="20220623 01:47:12.407"/>
 </test>
 <test id="s1-t2" name="Test Case 02: Go to create account page">
 <kw name="Acess page Login" library="ResourceTestBemol">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${BUTTON_LOGIN}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220623 01:43:17.135" level="INFO">Clicking element 'xpath://*[@id="profile-orders-2"]/div[1]/a'.</msg>
-<status status="PASS" starttime="20220623 01:43:17.134" endtime="20220623 01:43:20.509"/>
+<msg timestamp="20220623 01:47:12.412" level="INFO">Clicking element 'xpath://*[@id="profile-orders-2"]/div[1]/a'.</msg>
+<status status="PASS" starttime="20220623 01:47:12.411" endtime="20220623 01:47:16.423"/>
 </kw>
-<status status="PASS" starttime="20220623 01:43:17.133" endtime="20220623 01:43:20.509"/>
+<status status="PASS" starttime="20220623 01:47:12.411" endtime="20220623 01:47:16.423"/>
 </kw>
 <kw name="Check login page title Login - Bemol" library="ResourceTestBemol" sourcename="Check login page title ${TITULO1}">
 <kw name="Check page title ${TITULO1}" library="ResourceTestBemol" sourcename="Check page title ${TITULO}">
 <kw name="Title Should Be" library="SeleniumLibrary">
 <arg>${TITULO}</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20220623 01:43:20.628" level="INFO">Page title is 'Login - Bemol'.</msg>
-<status status="PASS" starttime="20220623 01:43:20.512" endtime="20220623 01:43:20.628"/>
+<msg timestamp="20220623 01:47:16.497" level="INFO">Page title is 'Login - Bemol'.</msg>
+<status status="PASS" starttime="20220623 01:47:16.425" endtime="20220623 01:47:16.497"/>
 </kw>
-<status status="PASS" starttime="20220623 01:43:20.511" endtime="20220623 01:43:20.629"/>
+<status status="PASS" starttime="20220623 01:47:16.425" endtime="20220623 01:47:16.497"/>
 </kw>
-<status status="PASS" starttime="20220623 01:43:20.510" endtime="20220623 01:43:20.629"/>
+<status status="PASS" starttime="20220623 01:47:16.424" endtime="20220623 01:47:16.497"/>
 </kw>
 <kw name="Click on Faça cadastro" library="ResourceTestBemol">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${BUTTON_REGISTER}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220623 01:43:20.632" level="INFO">Clicking element 'xpath://*[@id="criarconta"]/div/div/div'.</msg>
-<status status="PASS" starttime="20220623 01:43:20.631" endtime="20220623 01:43:23.262"/>
+<msg timestamp="20220623 01:47:16.499" level="INFO">Clicking element 'xpath://*[@id="criarconta"]/div/div/div'.</msg>
+<status status="PASS" starttime="20220623 01:47:16.498" endtime="20220623 01:47:18.723"/>
 </kw>
-<status status="PASS" starttime="20220623 01:43:20.631" endtime="20220623 01:43:23.263"/>
+<status status="PASS" starttime="20220623 01:47:16.498" endtime="20220623 01:47:18.724"/>
 </kw>
-<status status="PASS" starttime="20220623 01:43:17.132" endtime="20220623 01:43:23.267"/>
+<status status="PASS" starttime="20220623 01:47:12.409" endtime="20220623 01:47:18.726"/>
 </test>
 <test id="s1-t3" name="Test Case 03: Fill in the registration fields - Dados Pessoais">
 <kw name="Check title of registration page Área do Cliente - Bemol" library="ResourceTestBemol" sourcename="Check title of registration page ${TITULO2}">
 <kw name="Title Should Be" library="SeleniumLibrary">
 <arg>${TITULO2}</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20220623 01:43:23.289" level="INFO">Page title is 'Área do Cliente - Bemol'.</msg>
-<status status="PASS" starttime="20220623 01:43:23.274" endtime="20220623 01:43:23.289"/>
+<msg timestamp="20220623 01:47:18.799" level="INFO">Page title is 'Área do Cliente - Bemol'.</msg>
+<status status="PASS" starttime="20220623 01:47:18.732" endtime="20220623 01:47:18.799"/>
 </kw>
-<status status="PASS" starttime="20220623 01:43:23.273" endtime="20220623 01:43:23.289"/>
+<status status="PASS" starttime="20220623 01:47:18.730" endtime="20220623 01:47:18.800"/>
 </kw>
 <kw name="Enter the user's personal data" library="ResourceTestBemol">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${FIELD_NAME}</arg>
 <arg>${TEXT_NAME}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220623 01:43:23.291" level="INFO">Typing text 'Valentina Sophia Gomes' into text field 'xpath://*[@id="AddOrSetCustomer-Name"]'.</msg>
-<status status="PASS" starttime="20220623 01:43:23.290" endtime="20220623 01:43:23.910"/>
+<msg timestamp="20220623 01:47:18.810" level="INFO">Typing text 'Valentina Sophia Gomes' into text field 'xpath://*[@id="AddOrSetCustomer-Name"]'.</msg>
+<status status="PASS" starttime="20220623 01:47:18.809" endtime="20220623 01:47:19.366"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${FIELD_BIRTH_DATE}</arg>
 <arg>${TEXT_BIRTH_DATE}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220623 01:43:23.911" level="INFO">Typing text '17011997' into text field 'xpath://*[@id="AddOrSetCustomer-BirthDate"]'.</msg>
-<status status="PASS" starttime="20220623 01:43:23.910" endtime="20220623 01:43:24.070"/>
+<msg timestamp="20220623 01:47:19.367" level="INFO">Typing text '17011997' into text field 'xpath://*[@id="AddOrSetCustomer-BirthDate"]'.</msg>
+<status status="PASS" starttime="20220623 01:47:19.366" endtime="20220623 01:47:19.549"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${SELECT_GENRE}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220623 01:43:24.071" level="INFO">Clicking element 'id:AddOrSetCustomer-Gender'.</msg>
-<status status="PASS" starttime="20220623 01:43:24.070" endtime="20220623 01:43:24.433"/>
+<msg timestamp="20220623 01:47:19.551" level="INFO">Clicking element 'id:AddOrSetCustomer-Gender'.</msg>
+<status status="PASS" starttime="20220623 01:47:19.550" endtime="20220623 01:47:19.713"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${SELECT_GENRE}</arg>
 <arg>5S</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220623 01:43:24.434" endtime="20220623 01:43:24.549"/>
+<status status="PASS" starttime="20220623 01:47:19.713" endtime="20220623 01:47:19.830"/>
 </kw>
 <kw name="Select From List By Value" library="SeleniumLibrary">
 <arg>${SELECT_GENRE}</arg>
 <arg>F</arg>
 <doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<msg timestamp="20220623 01:43:24.550" level="INFO">Selecting options from selection list 'id:AddOrSetCustomer-Gender' by value F.</msg>
-<status status="PASS" starttime="20220623 01:43:24.549" endtime="20220623 01:43:24.929"/>
+<msg timestamp="20220623 01:47:19.830" level="INFO">Selecting options from selection list 'id:AddOrSetCustomer-Gender' by value F.</msg>
+<status status="PASS" starttime="20220623 01:47:19.830" endtime="20220623 01:47:20.232"/>
 </kw>
 <kw name="List Selection Should Be" library="SeleniumLibrary">
 <arg>${SELECT_GENRE}</arg>
 <arg>F</arg>
 <doc>Verifies selection list ``locator`` has ``expected`` options selected.</doc>
-<msg timestamp="20220623 01:43:24.930" level="INFO">Verifying list 'id:AddOrSetCustomer-Gender' has option [ F ] selected.</msg>
-<msg timestamp="20220623 01:43:24.987" level="INFO">Current page contains list 'id:AddOrSetCustomer-Gender'.</msg>
-<status status="PASS" starttime="20220623 01:43:24.929" endtime="20220623 01:43:25.466"/>
+<msg timestamp="20220623 01:47:20.233" level="INFO">Verifying list 'id:AddOrSetCustomer-Gender' has option [ F ] selected.</msg>
+<msg timestamp="20220623 01:47:20.311" level="INFO">Current page contains list 'id:AddOrSetCustomer-Gender'.</msg>
+<status status="PASS" starttime="20220623 01:47:20.232" endtime="20220623 01:47:20.776"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${FIELD_CPF}</arg>
 <arg>${TEXT_CPF}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220623 01:43:25.467" level="INFO">Typing text '25009421208' into text field 'xpath://*[@id="AddOrSetCustomer-Cpf"]'.</msg>
-<status status="PASS" starttime="20220623 01:43:25.467" endtime="20220623 01:43:25.911"/>
+<msg timestamp="20220623 01:47:20.777" level="INFO">Typing text '25009421208' into text field 'xpath://*[@id="AddOrSetCustomer-Cpf"]'.</msg>
+<status status="PASS" starttime="20220623 01:47:20.777" endtime="20220623 01:47:21.157"/>
 </kw>
-<status status="PASS" starttime="20220623 01:43:23.289" endtime="20220623 01:43:25.911"/>
+<status status="PASS" starttime="20220623 01:47:18.808" endtime="20220623 01:47:21.158"/>
 </kw>
-<status status="PASS" starttime="20220623 01:43:23.271" endtime="20220623 01:43:25.912"/>
+<status status="PASS" starttime="20220623 01:47:18.729" endtime="20220623 01:47:21.159"/>
 </test>
 <test id="s1-t4" name="Test Case 04: Fill in the registration fields - Dados de entrega">
 <kw name="Check if the page has Dados de entrega" library="ResourceTestBemol">
 <kw name="Page Should Contain Element" library="SeleniumLibrary">
 <arg>${TITLE3_DELIVERY_DATA}</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20220623 01:43:25.954" level="INFO">Current page contains element 'xpath://*[@id="content-wrapper"]/div[1]/div/div/div/div/div[2]/form/div[2]/div'.</msg>
-<status status="PASS" starttime="20220623 01:43:25.916" endtime="20220623 01:43:25.954"/>
+<msg timestamp="20220623 01:47:21.205" level="INFO">Current page contains element 'xpath://*[@id="content-wrapper"]/div[1]/div/div/div/div/div[2]/form/div[2]/div'.</msg>
+<status status="PASS" starttime="20220623 01:47:21.162" endtime="20220623 01:47:21.206"/>
 </kw>
-<status status="PASS" starttime="20220623 01:43:25.915" endtime="20220623 01:43:25.954"/>
+<status status="PASS" starttime="20220623 01:47:21.161" endtime="20220623 01:47:21.206"/>
 </kw>
 <kw name="Fill in user delivery data" library="ResourceTestBemol">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${FIELD_IDENTIFICATION}</arg>
 <arg>${TEXT_IDENTIFICATION}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220623 01:43:25.956" level="INFO">Typing text 'casa' into text field 'xpath://*[@id="AddOrSetAddress-0-Name"]'.</msg>
-<status status="PASS" starttime="20220623 01:43:25.955" endtime="20220623 01:43:26.403"/>
+<msg timestamp="20220623 01:47:21.208" level="INFO">Typing text 'casa' into text field 'xpath://*[@id="AddOrSetAddress-0-Name"]'.</msg>
+<status status="PASS" starttime="20220623 01:47:21.208" endtime="20220623 01:47:21.780"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${FIELD_CEP}</arg>
 <arg>${TEXT_CEP}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220623 01:43:26.404" level="INFO">Typing text '69093067' into text field 'id:AddOrSetAddress-0-PostalCode'.</msg>
-<status status="PASS" starttime="20220623 01:43:26.403" endtime="20220623 01:43:26.986"/>
+<msg timestamp="20220623 01:47:21.782" level="INFO">Typing text '69093067' into text field 'id:AddOrSetAddress-0-PostalCode'.</msg>
+<status status="PASS" starttime="20220623 01:47:21.781" endtime="20220623 01:47:22.086"/>
 </kw>
 <kw name="Double Click Element" library="SeleniumLibrary">
 <arg>${FIELD_ADDRESS}</arg>
 <doc>Double clicks the element identified by ``locator``.</doc>
-<msg timestamp="20220623 01:43:26.987" level="INFO">Double clicking element 'id:AddOrSetAddress-0-AddressLine'.</msg>
-<status status="PASS" starttime="20220623 01:43:26.987" endtime="20220623 01:43:27.434"/>
+<msg timestamp="20220623 01:47:22.087" level="INFO">Double clicking element 'id:AddOrSetAddress-0-AddressLine'.</msg>
+<status status="PASS" starttime="20220623 01:47:22.086" endtime="20220623 01:47:22.479"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${FIELD_NUMBER}</arg>
 <arg>${TEXT_NUMBER}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220623 01:43:27.434" level="INFO">Typing text '05' into text field 'id:AddOrSetAddress-0-Number'.</msg>
-<status status="PASS" starttime="20220623 01:43:27.434" endtime="20220623 01:43:27.573"/>
+<msg timestamp="20220623 01:47:22.480" level="INFO">Typing text '05' into text field 'id:AddOrSetAddress-0-Number'.</msg>
+<status status="PASS" starttime="20220623 01:47:22.479" endtime="20220623 01:47:22.899"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${FIELD_COMPLEMENT}</arg>
 <arg>${TEXT_COMPLEMENT}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220623 01:43:27.573" level="INFO">Typing text 'Proximo a rua Flores' into text field 'id:AddOrSetAddress-0-AddressNotes'.</msg>
-<status status="PASS" starttime="20220623 01:43:27.573" endtime="20220623 01:43:27.752"/>
+<msg timestamp="20220623 01:47:22.900" level="INFO">Typing text 'Proximo a rua Flores' into text field 'id:AddOrSetAddress-0-AddressNotes'.</msg>
+<status status="PASS" starttime="20220623 01:47:22.899" endtime="20220623 01:47:23.225"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${FIELD_REFERENCE}</arg>
 <arg>${TEXT_REFERENCE}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220623 01:43:27.753" level="INFO">Typing text 'Mercado Vidal' into text field 'id:AddOrSetAddress-0-Landmark'.</msg>
-<status status="PASS" starttime="20220623 01:43:27.752" endtime="20220623 01:43:27.915"/>
+<msg timestamp="20220623 01:47:23.225" level="INFO">Typing text 'Mercado Vidal' into text field 'id:AddOrSetAddress-0-Landmark'.</msg>
+<status status="PASS" starttime="20220623 01:47:23.225" endtime="20220623 01:47:23.431"/>
 </kw>
-<status status="PASS" starttime="20220623 01:43:25.955" endtime="20220623 01:43:27.915"/>
+<status status="PASS" starttime="20220623 01:47:21.207" endtime="20220623 01:47:23.432"/>
 </kw>
-<status status="PASS" starttime="20220623 01:43:25.914" endtime="20220623 01:43:27.916"/>
+<status status="PASS" starttime="20220623 01:47:21.160" endtime="20220623 01:47:23.432"/>
 </test>
 <test id="s1-t5" name="Test Case 05: Fill in the registration fields - Dados de contato">
 <kw name="Check if the page has Dados de contato" library="ResourceTestBemol">
 <kw name="Page Should Contain Element" library="SeleniumLibrary">
 <arg>${TITLE4_CONTACT_DETAILS}</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20220623 01:43:27.937" level="INFO">Current page contains element 'xpath://*[@id="content-wrapper"]/div[1]/div/div/div/div/div[2]/form/div[3]/div'.</msg>
-<status status="PASS" starttime="20220623 01:43:27.920" endtime="20220623 01:43:27.938"/>
+<msg timestamp="20220623 01:47:23.454" level="INFO">Current page contains element 'xpath://*[@id="content-wrapper"]/div[1]/div/div/div/div/div[2]/form/div[3]/div'.</msg>
+<status status="PASS" starttime="20220623 01:47:23.435" endtime="20220623 01:47:23.454"/>
 </kw>
-<status status="PASS" starttime="20220623 01:43:27.919" endtime="20220623 01:43:27.938"/>
+<status status="PASS" starttime="20220623 01:47:23.435" endtime="20220623 01:47:23.455"/>
 </kw>
 <kw name="Fill in the user's contact details" library="ResourceTestBemol">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${FIELD_CELL}</arg>
 <arg>${TEXT_CELL}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220623 01:43:27.939" level="INFO">Typing text '92993949212' into text field 'id:AddOrSetCustomer-Contact-CellPhone'.</msg>
-<status status="PASS" starttime="20220623 01:43:27.939" endtime="20220623 01:43:28.072"/>
+<msg timestamp="20220623 01:47:23.456" level="INFO">Typing text '92993949212' into text field 'id:AddOrSetCustomer-Contact-CellPhone'.</msg>
+<status status="PASS" starttime="20220623 01:47:23.456" endtime="20220623 01:47:23.586"/>
 </kw>
-<status status="PASS" starttime="20220623 01:43:27.938" endtime="20220623 01:43:28.072"/>
+<status status="PASS" starttime="20220623 01:47:23.455" endtime="20220623 01:47:23.586"/>
 </kw>
-<status status="PASS" starttime="20220623 01:43:27.918" endtime="20220623 01:43:28.073"/>
+<status status="PASS" starttime="20220623 01:47:23.434" endtime="20220623 01:47:23.587"/>
 </test>
 <test id="s1-t6" name="Test Case 06: Fill in the registration fields - Dados da conta">
 <kw name="Check if the page has Dados da conta" library="ResourceTestBemol">
 <kw name="Page Should Contain Element" library="SeleniumLibrary">
 <arg>${TILE5_CONTACT_DETAILS}</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20220623 01:43:28.095" level="INFO">Current page contains element 'xpath://*[@id="content-wrapper"]/div[1]/div/div/div/div/div[2]/form/div[4]/div'.</msg>
-<status status="PASS" starttime="20220623 01:43:28.077" endtime="20220623 01:43:28.095"/>
+<msg timestamp="20220623 01:47:23.608" level="INFO">Current page contains element 'xpath://*[@id="content-wrapper"]/div[1]/div/div/div/div/div[2]/form/div[4]/div'.</msg>
+<status status="PASS" starttime="20220623 01:47:23.590" endtime="20220623 01:47:23.608"/>
 </kw>
-<status status="PASS" starttime="20220623 01:43:28.076" endtime="20220623 01:43:28.096"/>
+<status status="PASS" starttime="20220623 01:47:23.590" endtime="20220623 01:47:23.609"/>
 </kw>
 <kw name="Fill in user account details" library="ResourceTestBemol">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${FIELD_EMAIL}</arg>
 <arg>${TEXT_EMAIL}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220623 01:43:28.097" level="INFO">Typing text 'valentina_sophia_gomes@soupelli.com.br' into text field 'id:AddOrSetCustomer-Email'.</msg>
-<status status="PASS" starttime="20220623 01:43:28.096" endtime="20220623 01:43:28.338"/>
+<msg timestamp="20220623 01:47:23.610" level="INFO">Typing text 'valentina_sophia_gomes@soupelli.com.br' into text field 'id:AddOrSetCustomer-Email'.</msg>
+<status status="PASS" starttime="20220623 01:47:23.609" endtime="20220623 01:47:23.859"/>
 </kw>
 <kw name="Input Password" library="SeleniumLibrary">
 <arg>${FIELD_PASSWORD}</arg>
 <arg>${TEXT_PASSWORD}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20220623 01:43:28.338" level="INFO">Typing password into text field 'id:AddOrSetCustomer-Password'.</msg>
-<msg timestamp="20220623 01:43:28.373" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20220623 01:43:28.485" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20220623 01:43:28.338" endtime="20220623 01:43:28.485"/>
+<msg timestamp="20220623 01:47:23.859" level="INFO">Typing password into text field 'id:AddOrSetCustomer-Password'.</msg>
+<msg timestamp="20220623 01:47:23.896" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220623 01:47:24.005" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220623 01:47:23.859" endtime="20220623 01:47:24.005"/>
 </kw>
 <kw name="Input Password" library="SeleniumLibrary">
 <arg>${REPEAT_TEXT_PASSWORD}</arg>
 <arg>${TEXT_PASSWORD}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20220623 01:43:28.485" level="INFO">Typing password into text field 'id:AddOrSetCustomer-Password-check'.</msg>
-<msg timestamp="20220623 01:43:28.522" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20220623 01:43:28.628" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20220623 01:43:28.485" endtime="20220623 01:43:28.628"/>
+<msg timestamp="20220623 01:47:24.006" level="INFO">Typing password into text field 'id:AddOrSetCustomer-Password-check'.</msg>
+<msg timestamp="20220623 01:47:24.045" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220623 01:47:24.153" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220623 01:47:24.005" endtime="20220623 01:47:24.154"/>
 </kw>
-<status status="PASS" starttime="20220623 01:43:28.096" endtime="20220623 01:43:28.628"/>
+<status status="PASS" starttime="20220623 01:47:23.609" endtime="20220623 01:47:24.154"/>
 </kw>
 <kw name="Click on register button" library="ResourceTestBemol">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${BUTTON_REGISTER2}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220623 01:43:28.630" level="INFO">Clicking element 'css:.bt-submit'.</msg>
-<status status="PASS" starttime="20220623 01:43:28.630" endtime="20220623 01:43:28.808"/>
+<msg timestamp="20220623 01:47:24.156" level="INFO">Clicking element 'css:.bt-submit'.</msg>
+<status status="PASS" starttime="20220623 01:47:24.156" endtime="20220623 01:47:24.367"/>
 </kw>
-<status status="PASS" starttime="20220623 01:43:28.629" endtime="20220623 01:43:28.809"/>
+<status status="PASS" starttime="20220623 01:47:24.155" endtime="20220623 01:47:24.367"/>
 </kw>
 <kw name="Check registration confirmation message" library="ResourceTestBemol">
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${TITLE6_MESSAGE_REGIS}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220623 01:43:28.810" endtime="20220623 01:43:28.828"/>
+<status status="PASS" starttime="20220623 01:47:24.370" endtime="20220623 01:47:24.601"/>
 </kw>
-<status status="PASS" starttime="20220623 01:43:28.810" endtime="20220623 01:43:28.829"/>
+<status status="PASS" starttime="20220623 01:47:24.370" endtime="20220623 01:47:24.602"/>
 </kw>
 <kw name="Close site" library="ResourceTestBemol">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220623 01:43:28.830" endtime="20220623 01:43:31.494"/>
+<status status="PASS" starttime="20220623 01:47:24.604" endtime="20220623 01:47:27.093"/>
 </kw>
-<status status="PASS" starttime="20220623 01:43:28.829" endtime="20220623 01:43:31.494"/>
+<status status="PASS" starttime="20220623 01:47:24.603" endtime="20220623 01:47:27.093"/>
 </kw>
-<status status="PASS" starttime="20220623 01:43:28.075" endtime="20220623 01:43:31.494"/>
+<status status="PASS" starttime="20220623 01:47:23.589" endtime="20220623 01:47:27.093"/>
 </test>
-<status status="PASS" starttime="20220623 01:43:05.995" endtime="20220623 01:43:31.500"/>
+<test id="s1-t7" name="Test Case 07: Go to login page">
+<kw name="Access Home page" library="ResourceTestBemol">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220623 01:47:27.100" level="INFO">Opening browser 'chrome' to base url 'https://www.bemol.com.br/'.</msg>
+<status status="PASS" starttime="20220623 01:47:27.099" endtime="20220623 01:47:38.091"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220623 01:47:38.091" endtime="20220623 01:47:38.676"/>
+</kw>
+<status status="PASS" starttime="20220623 01:47:27.098" endtime="20220623 01:47:38.676"/>
+</kw>
+<kw name="Check page title Bemol | Escolha com Confiança" library="ResourceTestBemol" sourcename="Check page title ${TITULO}">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>${TITULO}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220623 01:47:39.023" level="INFO">Page title is 'Bemol | Escolha com Confiança'.</msg>
+<status status="PASS" starttime="20220623 01:47:38.681" endtime="20220623 01:47:39.023"/>
+</kw>
+<status status="PASS" starttime="20220623 01:47:38.679" endtime="20220623 01:47:39.024"/>
+</kw>
+<kw name="Acess page Login" library="ResourceTestBemol">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BUTTON_LOGIN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220623 01:47:39.026" level="INFO">Clicking element 'xpath://*[@id="profile-orders-2"]/div[1]/a'.</msg>
+<status status="PASS" starttime="20220623 01:47:39.025" endtime="20220623 01:47:42.521"/>
+</kw>
+<status status="PASS" starttime="20220623 01:47:39.024" endtime="20220623 01:47:42.522"/>
+</kw>
+<kw name="Check login page title Login - Bemol" library="ResourceTestBemol" sourcename="Check login page title ${TITULO1}">
+<kw name="Check page title ${TITULO1}" library="ResourceTestBemol" sourcename="Check page title ${TITULO}">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>${TITULO}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220623 01:47:42.847" level="INFO">Page title is 'Login - Bemol'.</msg>
+<status status="PASS" starttime="20220623 01:47:42.524" endtime="20220623 01:47:42.847"/>
+</kw>
+<status status="PASS" starttime="20220623 01:47:42.523" endtime="20220623 01:47:42.847"/>
+</kw>
+<status status="PASS" starttime="20220623 01:47:42.522" endtime="20220623 01:47:42.848"/>
+</kw>
+<status status="PASS" starttime="20220623 01:47:27.097" endtime="20220623 01:47:42.851"/>
+</test>
+<status status="PASS" starttime="20220623 01:47:01.557" endtime="20220623 01:47:42.865"/>
 </suite>
 <statistics>
 <total>
-<stat pass="6" fail="0" skip="0">All Tests</stat>
+<stat pass="7" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="6" fail="0" skip="0" id="s1" name="TestBemol">TestBemol</stat>
+<stat pass="7" fail="0" skip="0" id="s1" name="TestBemol">TestBemol</stat>
 </suite>
 </statistics>
 <errors>
