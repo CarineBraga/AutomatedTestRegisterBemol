@@ -33,6 +33,12 @@ ${FIELD_EMAIL}               id:AddOrSetCustomer-Email
 ${TEXT_EMAIL}                valentina_sophia_gomes@soupelli.com.br
 ${FIELD_CELL}                id:AddOrSetCustomer-Contact-CellPhone
 ${TEXT_CELL}                 92993949212
+${TILE5_CONTACT_DETAILS}     xpath://*[@id="content-wrapper"]/div[1]/div/div/div/div/div[2]/form/div[4]/div
+${FIELD_PASSWORD}            id:AddOrSetCustomer-Password
+${TEXT_PASSWORD}             @beauty17   
+${REPEAT_TEXT_PASSWORD}      id:AddOrSetCustomer-Password-check
+${BUTTON_REGISTER2}          css:.bt-submit
+${TITLE6_MESSAGE_REGIS}      id:content-wrapper
 
 *** Keywords ***
 
@@ -80,3 +86,20 @@ Check if the page has Dados de contato
 
 Fill in the user's contact details
   Input Text    ${FIELD_CELL}    ${TEXT_CELL}
+
+Check if the page has Dados da conta
+  Page Should Contain Element    ${TILE5_CONTACT_DETAILS}
+
+Fill in user account details
+  Input Text    ${FIELD_EMAIL}    ${TEXT_EMAIL}
+  Input Password    ${FIELD_PASSWORD}    ${TEXT_PASSWORD}
+  Input Password    ${REPEAT_TEXT_PASSWORD}    ${TEXT_PASSWORD}
+
+Click on register button
+  Click Element    ${BUTTON_REGISTER2}
+
+Check registration confirmation message
+  Wait Until Page Contains Element    ${TITLE6_MESSAGE_REGIS}
+
+Close site 
+  Close Browser

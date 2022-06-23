@@ -24,3 +24,10 @@ Test Case 04: Fill in the registration fields - Dados de entrega
 Test Case 05: Fill in the registration fields - Dados de contato
   Check if the page has Dados de contato
   Fill in the user's contact details
+
+Test Case 06: Fill in the registration fields - Dados da conta
+  Check if the page has Dados da conta
+  Fill in user account details
+  Click on register button
+  Check registration confirmation message
+  Close site
