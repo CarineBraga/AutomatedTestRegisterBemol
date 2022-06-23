@@ -11,10 +11,23 @@ ${BUTTON_REGISTER}           xpath://*[@id="criarconta"]/div/div/div
 ${FIELD_NAME}                xpath://*[@id="AddOrSetCustomer-Name"]
 ${TEXT_NAME}                 Valentina Sophia Gomes
 ${FIELD_BIRTH_DATE}          xpath://*[@id="AddOrSetCustomer-BirthDate"]
-${TEXT_BIRTH_DATE}           17011988
+${TEXT_BIRTH_DATE}           17011997
 ${SELECT_GENRE}              id:AddOrSetCustomer-Gender 
 ${FIELD_CPF}                 xpath://*[@id="AddOrSetCustomer-Cpf"]
 ${TEXT_CPF}                  25009421208
+${TITLE3_DELIVERY_DATA}      xpath://*[@id="content-wrapper"]/div[1]/div/div/div/div/div[2]/form/div[2]/div
+${FIELD_IDENTIFICATION}      xpath://*[@id="AddOrSetAddress-0-Name"]
+${TEXT_IDENTIFICATION}       casa
+${FIELD_CEP}                 id:AddOrSetAddress-0-PostalCode
+${TEXT_CEP}                  69093067
+${FIELD_ADDRESS}             id:AddOrSetAddress-0-AddressLine
+${TEXT_ADDRESS}              rua Melquias
+${FIELD_NUMBER}              id:AddOrSetAddress-0-Number
+${TEXT_NUMBER}               05
+${FIELD_COMPLEMENT}          id:AddOrSetAddress-0-AddressNotes
+${TEXT_COMPLEMENT}           Proximo a  rua Flores
+${FIELD_REFERENCE}           id:AddOrSetAddress-0-Landmark
+${TEXT_REFERENCE}            Mercado Vidal
 
 
 *** Keywords ***
@@ -46,3 +59,14 @@ Enter the user's personal data
   Select From List By Value    ${SELECT_GENRE}    F
   List Selection Should Be     ${SELECT_GENRE}    F
   Input Text    ${FIELD_CPF}   ${TEXT_CPF}
+
+Check if the page has Dados de entrega
+  Page Should Contain Element   ${TITLE3_DELIVERY_DATA}
+
+Fill in user delivery data  
+  Input Text   ${FIELD_IDENTIFICATION}     ${TEXT_IDENTIFICATION}
+  Input Text    ${FIELD_CEP}    ${TEXT_CEP}
+  Double Click Element  ${FIELD_ADDRESS}  
+  Input Text   ${FIELD_NUMBER}    ${TEXT_NUMBER}
+  Input Text   ${FIELD_COMPLEMENT}   ${TEXT_COMPLEMENT}
+  Input Text    ${FIELD_REFERENCE}    ${TEXT_REFERENCE}

@@ -16,3 +16,7 @@ Test Case 02: Go to create account page
 Test Case 03: Fill in the registration fields - Dados Pessoais
   Check title of registration page Área do Cliente - Bemol
   Enter the user's personal data
+
+Test Case 04: Fill in the registration fields - Dados de entrega
+  Check if the page has Dados de entrega
+  Fill in user delivery data
