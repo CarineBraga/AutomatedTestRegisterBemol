@@ -15,9 +15,10 @@ ${FIELD_NAME}                xpath://*[@id="AddOrSetCustomer-Name"]
 ${TEXT_NAME}                 Fernando Moura
 ${FIELD_BIRTH_DATE}          xpath://*[@id="AddOrSetCustomer-BirthDate"]
 ${TEXT_BIRTH_DATE}           14061974
-${SELECT_GENRE}              id:AddOrSetCustomer-Gender 
+${SELECT_GENRE}              id:AddOrSetCustomer-Gender
+${TYPE_GENRE}                M   # M for Masculine and F for Female
 ${FIELD_CPF}                 xpath://*[@id="AddOrSetCustomer-Cpf"]
-${TEXT_CPF}                  46217182238  #User CPF for example: 21100753257, 09809798202, 21462571212
+${TEXT_CPF}                  46217182238  # User CPF for example: 21100753257, 09809798202, 21462571212
 ${TITLE3_DELIVERY_DATA}      xpath://*[@id="content-wrapper"]/div[1]/div/div/div/div/div[2]/form/div[2]/div
 ${FIELD_IDENTIFICATION}      xpath://*[@id="AddOrSetAddress-0-Name"]
 ${TEXT_IDENTIFICATION}       beco
@@ -33,7 +34,7 @@ ${FIELD_REFERENCE}           id:AddOrSetAddress-0-Landmark
 ${TEXT_REFERENCE}            Mercado Vidal
 ${TITLE4_CONTACT_DETAILS}    xpath://*[@id="content-wrapper"]/div[1]/div/div/div/div/div[2]/form/div[3]/div
 ${FIELD_EMAIL}               id:AddOrSetCustomer-Email
-${TEXT_EMAIL}                fernando.moura9451@gmail.com  #User Email for example: fer.nandomoura9451@gmail.com, fernandomoura.9451@gmail.com, fernando.moura.9451@gmail.com
+${TEXT_EMAIL}                fernando.moura9451@gmail.com  # User Email for example: fer.nandomoura9451@gmail.com, fernandomoura.9451@gmail.com, fernando.moura.9451@gmail.com
 ${FIELD_CELL}                id:AddOrSetCustomer-Contact-CellPhone
 ${TEXT_CELL}                 92993949212
 ${TILE5_CONTACT_DETAILS}     xpath://*[@id="content-wrapper"]/div[1]/div/div/div/div/div[2]/form/div[4]/div
@@ -76,8 +77,8 @@ Enter the user's personal data
   Input Text    ${FIELD_BIRTH_DATE}    ${TEXT_BIRTH_DATE}
   Click Element    ${SELECT_GENRE}
   Wait Until Element Is Visible    ${SELECT_GENRE}  5S
-  Select From List By Value    ${SELECT_GENRE}    M
-  List Selection Should Be     ${SELECT_GENRE}    M
+  Select From List By Value    ${SELECT_GENRE}    ${TYPE_GENRE}
+  List Selection Should Be     ${SELECT_GENRE}    ${TYPE_GENRE}
   Input Text    ${FIELD_CPF}   ${TEXT_CPF}
 
 Check if the page has Dados de entrega
