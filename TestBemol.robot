@@ -29,6 +29,7 @@ Test Case 06: Fill in the registration fields - Dados da conta
   Check if the page has Dados da conta
   Fill in user account details
   Click on register button
+  Check if there is no visible error message
 
 Teste Case 07: Check success message 
   Check registration confirmation message
@@ -43,4 +44,8 @@ Test Case 08: Go to login page
 Test Case 09: Login
   Fill email and password
   Click on the button Entrar
+  Check if there is no visible error message login
+
+Test Case 10: Check login success message
+  Check login confirmation
   Close site
